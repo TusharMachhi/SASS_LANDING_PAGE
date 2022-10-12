@@ -1,0 +1,55 @@
+.ser{
+
+    .servicecon{
+        z-index: 5555;
+    }
+    overflow: hidden;
+
+   .cla{
+
+    font-size: map-get($fonts, "big" );
+    padding-bottom: 30px;
+    @include media(phone) {
+        font-size:  map-get($fonts, "medium" );
+        padding: 10px;
+        
+    }
+
+   }
+  
+   width: 93%;
+   height: 50vh;
+   background: url("img/cta-bg\ -\ Copy.jpg");
+   object-fit: cover;
+   margin:0px auto;
+   background-attachment: fixed;
+   color: white;
+   @include myflex(center);
+   flex-direction: column;
+   padding: 0px 40px;
+   text-align: center;
+   line-height: 30px;
+   .btn{
+    @include btn(25px,180px,45px,white,$mailcolor);
+    
+    font-size:20px;
+    margin-top: 15px;
+
+    @include media(phone){
+
+        @include btn(25px,150px,35px,white,$mailcolor);
+    
+        font-size:16px;
+        margin: 10px;
+
+    }
+   }
+   &::after{
+       position: absolute;
+       content: "";
+       width: 93%;
+       height: 50vh;
+       background:rgba(0,0,0,0.5);
+   }
+   
+}

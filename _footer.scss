@@ -1,0 +1,85 @@
+.footergrid{
+   
+   display: grid;
+  justify-content: start;
+    grid-template-columns:2fr 1fr 1fr 2fr;
+    width: 100%;
+    margin: 40px auto  0px auto;
+    background: #0c0c0c;
+    color: white;
+
+    
+
+    @include media(tab-port){
+        grid-template-columns: 2fr 2fr;
+    }
+
+    @include media(phone){
+        grid-template-columns: 1fr;
+    }
+
+   
+}
+.footercard{
+   
+    padding: 20px 0px;
+    ul{
+        li{
+           
+            list-style: none;
+            padding: 4px;
+            a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: $mailcolor;
+                }
+            };
+        }
+    }
+
+   .footerhead{
+       font-size: map-get($fonts , "medium" );
+   }
+   .footerpara{
+       padding: 10px;
+   }
+
+}
+.copyright{
+    width: 100%;
+    margin: 0px auto;
+    background: #0c0c0c;
+    border-top: 1px solid #262626;
+    color: white;
+    padding: 30px;
+}
+.footser{
+    width: 70%;
+    height: 35px;
+    outline:0;
+    border: 0;
+    border-radius: 20px;
+    padding-left: 10px;
+    
+}
+.serbtn{
+    
+    width: 26%;
+    height: 37px;
+    outline:0;
+    border: 0;
+    border-radius: 20px;
+    transform: translateX(-50%);
+    background: $mailcolor;
+    color: white;
+    
+}
+.footercon{
+    padding: 30px 0px;
+}
+
+.hdcol{
+    color: $mailcolor;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,105 @@
+.abt{
+    padding:50px;
+    
+
+    .agrid{
+        .cgrid{
+            line-height: 36px;
+            .cpara{
+                font-size: map-get($fonts,"medium");
+            }
+        }
+        width: 100%;
+        height: 100%;
+        @include grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+        @include media(phone){
+            grid-template-columns: 1fr;
+        }
+
+        @include media(tab-port){
+            grid-template-columns: 1fr;
+        }
+
+        .igrid{
+            .aimage{
+               width: 100%;
+              
+               height: auto;
+            }
+        }
+
+    }
+}
+.cardgirds{
+   
+    margin-top: 40px;
+    @include grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    @include media(tab-port){
+        grid-template-columns: 2fr;
+
+    }
+
+    @include media(tab-port){
+        grid-template-columns: 2fr;
+        
+    }
+      
+    
+
+    @include media(phone){
+        grid-template-columns: 1fr;
+        
+    }
+
+    .card1{
+        &:hover .mycontent{
+            padding-bottom: 50px;
+            
+
+        } ;
+        .mycontent{
+            transition: all ease-in-out 0.3s ;   
+       
+        @include grid;
+       
+      @include color(card,100%,250px);
+      text-align: start;
+      padding:10px 20px 20px 10px;
+
+     
+     
+      .cnumber,.cheader{
+          font-size: map-get($fonts, "medium" );
+          font-weight: bold;
+          
+      }
+      .cnumber{
+          color: $mailcolor;
+          font-size: 40px;
+      }
+     &:hover .cnumber{
+          color: white!important;
+      }
+      
+      &:hover{
+          
+
+        @include color(hover,100%,250px);
+       
+
+      }
+        
+      }
+    
+     
+    }
+    
+
+
+}
+
+

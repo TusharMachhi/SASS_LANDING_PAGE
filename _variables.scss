@@ -1,0 +1,92 @@
+
+@mixin  myflex($jcontent) {
+    display: flex;
+    justify-content: $jcontent;
+    align-items: center;
+    
+}
+
+@mixin btn($bd_r,$width,$height,$cl,$bgcl) {
+    border-radius: $bd_r;
+    background: $bgcl;
+    outline: 0;
+    border: 0;
+    width: $width;
+    height: $height;
+    color: $cl;
+
+    
+}
+
+@mixin grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+@mixin color($color,$widht,$height){
+
+    @if $color == "card"{
+       
+        width: $widht;
+        height: $height;
+        box-shadow: 0 4px 16px 0px rgba(0,0,0,0.2);
+        
+       
+    }
+    @else if $color =="hover"{
+
+        width: $widht;
+        height: $height;
+        color: white !important;
+        background: $mailcolor;
+        box-shadow:  0 4px 16px 0px rgba(0,0,0,0.2);
+    }
+
+}
+
+
+
+@mixin media($brekpoints) {
+    @if $brekpoints == phone{
+
+        @media (max-width:600px){
+            @content;
+        }
+    }
+    @else if $brekpoints == tab-port{
+        @media (max-width:900px){
+            @content;
+        }
+    }
+    @else if $brekpoints == tab-land{
+        @media (max-width:1200px){
+            @content;
+        }
+    }
+    @else if $brekpoints == big-desk{
+        @media (max-width:1800px){
+            @content;
+        }
+    }
+    
+}
+
+
+
+$fonts:(
+
+"big":50px,
+"medium":25px,
+"small":13px,
+
+
+);
+
+$mailcolor:#cc1616;
+$headerbg: rgba(0,0,0,0.5);
+
+
+

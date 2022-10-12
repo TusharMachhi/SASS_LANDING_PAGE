@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: myfont;
+            src: url('adani-regular.ttf');
+        }
+
+
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: lighter;
+            font-family: myfont;
+            scroll-behavior: smooth;
+
+
+
+        }
+
+        body {
+
+            overflow-x: hidden;
+
+
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+        }
+
+        li {
+            list-style: none;
+            margin: 15px 20px;
+            padding: 6px 12px;
+            color: rgb(20, 83, 62);
+            border-radius: 15px;
+
+        }
+
+        li:hover {
+            background-color: rgb(20, 83, 62);
+
+            color: azure;
+            transition: 0.3s;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(20, 83, 62);
+            margin: 15px 20px;
+        }
+
+        .text {
+            font-size: 50px;
+            color: rgb(20, 83, 62);
+            position: absolute;
+            height: 10vh;
+            letter-spacing: 5px;
+        }
+
+        .home {
+            background-color: rgb(20, 83, 62);
+            border-radius: 15px;
+            color: azure;
+        }
+
+        section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        section img {
+
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            pointer-events: none;
+        }
+
+        .para {
+            line-height: 30px;
+            letter-spacing: 1px;
+            position: relative;
+            background: #094b65;
+            color: azure;
+            padding: 150px;
+            text-transform: capitalize;
+
+        }
+
+        section::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(to top, #094b65, transparent);
+            z-index: 10;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100px;
+            height: 35px;
+            color: #094b65;
+            border-radius: 20px;
+            border: 0;
+            background: white;
+            position: absolute;
+            transform: translateY(65px);
+            font-weight: lighter;
+            font-family: sans-serif;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="nav">
+        <a href="#">
+            <h1>Jungle</h1>
+        </a>
+        <ul>
+            <li class="home">Home</li>
+            <li>Contact</li>
+            <li>Service</li>
+            <li>Feedback</li>
+        </ul>
+    </header>
+    <section>
+
+        <span class="text">
+            <h5>Time for new</h5><br>Adventure
+        </span>
+
+
+        <img src="download/bird1.png" alt="" id="bird1">
+        <img src="download/bird2.png" alt="" id="bird2">
+        <img src="download/forest.png" alt="" id="forest">
+        <button class="btn">Explore</button>
+        <img src="download/rocks.png" alt="" id="rocks">
+        <img src="download/water.png" alt="" id="water">
+    </section>
+    <div class="para">
+       
+        aliquid voluptate? Fuga obcaecati beatae amet, ad, odio voluptates debitis cum quae recusandae, magni minima
+        dolores eos. Facilis, vel. Optio ullam nisi ea unde tempora quisquam, corrupti distinctio molestiae deleniti
+        perferendis soluta placeat ratione illo, veritatis provident facilis praesentium, sit doloribus! Exercitationem
+        earum corrupti perspiciatis, iste placeat officia! Ea perferendis fuga veritatis doloremque vitae amet culpa,
+        saepe quidem possimus! Beatae officiis error perspiciatis. Accusantium repudiandae voluptate cupiditate, soluta
+        fugiat voluptas, debitis doloremque eius quaerat facere sint consectetur doloribus repellat at eaque ea eum
+        amet! At, non accusamus! Velit dolores, repellat necessitatibus, debitis, quas in iure cum fugiat libero minima
+        explicabo sit voluptas magni sunt quo voluptatum enim ex? Facilis odit nemo voluptates maiores, illo dignissimos
+        sapiente totam modi commodi incidunt, esse praesentium saepe beatae deleniti? Saepe, est enim itaque excepturi
+        inventore temporibus numquam cum delectus sapiente eos similique! Laboriosam similique impedit amet vel
+        praesentium vitae consequatur modi dolorum sequi. Dolores voluptates, voluptas consequatur obcaecati dolore
+        ipsam omnis natus. Nemo ratione voluptatem obcaecati ea quibusdam odit. Est illo dignissimos reiciendis magni
+        doloribus ea ratione inventore beatae adipisci tenetur, neque quod nulla sequi pariatur voluptatum quos iste
+        excepturi ducimus assumenda quisquam ipsam quas ex voluptas quibusdam. Ab quas nihil quod. Qui accusantium quos
+        aliquam assumenda doloribus sunt id est odio blanditiis dicta quibusdam atque neque dignissimos asperiores
+        voluptatibus nemo sed debitis, ipsa, totam error? Minima quisquam asperiores perferendis, fuga numquam qui.
+        Asperiores, minima vero! Aliquid sit tempora ducimus enim id perspiciatis! Repellat sequi error quaerat nihil
+        aspernatur vero asperiores quisquam at, deleniti quas perferendis voluptates eveniet. Est rerum voluptatum ipsa
+        aliquid sed nulla, vel laborum molestiae quos rem iste nam facere? Facilis et culpa quos error architecto
+        laboriosam nostrum numquam dignissimos sequi sapiente. Iusto libero perferendis dolores neque explicabo. Dolorum
+        tempora dolorem libero officiis minus, vero ducimus aut numquam, quia incidunt voluptas sequi amet illo, vitae
+        provident doloribus laborum explicabo tenetur accusantium! Porro doloribus aliquam quisquam ipsa, illum
+        molestiae sequi omnis vero, at et culpa ex consectetur quibusdam dolorum. Provident possimus blanditiis iusto
+        doloribus illum delectus, fugit vel nihil ducimus exercitationem accusamus laborum nisi. Eius eum sed explicabo
+        recusandae enim laboriosam vero est, fuga ea dolorem nesciunt, magnam maiores minima corrupti id nemo! Est nobis
+        tempore sed praesentium quisquam maiores tenetur laboriosam enim in, omnis ullam, unde dicta temporibus sit
+        architecto doloremque eius mollitia! Corrupti nostrum optio sunt reprehenderit ratione ab cum? Quo enim harum
+        officiis quia. Saepe nobis ipsa nisi perferendis molestias quas voluptatem. Iure quia, ipsa ullam cum dolorem
+        eum facere optio veritatis libero adipisci, deleniti consequuntur earum error voluptates maiores! Dolore
+        mollitia ea dolores, iste nesciunt atque! Vel assumenda esse magni dolorum nostrum dolorem, nobis sequi, quo
+        unde consectetur explicabo voluptatum perferendis odio doloremque? Debitis ullam modi inventore nam natus
+        molestiae at, doloribus sint? Repellat fuga voluptate sit soluta delectus! Cupiditate consequuntur dolore vitae,
+        non illum culpa distinctio est vero harum maxime fugit officia, nemo nihil unde sunt expedita assumenda, impedit
+        dolores. Obcaecati atque similique consectetur aspernatur aliquam expedita aperiam. Odio impedit repellat
+        necessitatibus reprehenderit voluptas neque dolores aperiam! Et veniam, saepe debitis, ad hic repellendus libero
+        mollitia qui quaerat distinctio molestiae, at laboriosam maxime ipsum dolorem accusantium facilis nulla
+        voluptatem accusamus itaque nostrum obcaecati consequuntur sapiente. Illo ratione amet voluptatum porro aperiam
+        voluptates ipsa quisquam explicabo optio, sapiente est totam sint possimus. Aspernatur a dignissimos officiis
+        cupiditate expedita quisquam? Sit magnam minima alias quae, ab quas explicabo quis eius vero commodi deleniti,
+        architecto officiis temporibus repellat laborum quaerat amet cum excepturi dolores nam maxime suscipit vitae.
+        Porro sed laborum dignissimos quidem, tenetur sunt id in ab. Natus perferendis eaque voluptatem. Ex minima
+        voluptate vitae architecto provident nobis nisi molestiae non assumenda deleniti sunt explicabo qui est cum eos
+        dolor animi, quis voluptatem maiores obcaecati culpa placeat. Eligendi illo dignissimos saepe non vero quo. Quod
+        pariatur, officiis doloribus fugiat eum illum repudiandae mollitia corrupti temporibus, tenetur, consectetur
+        nam.
+    </div>
+    <script>
+        let text = document.querySelector(".text");
+        console.log(text)
+        let bird1 = document.getElementById("bird1");
+
+        let bird2 = document.getElementById("bird2");
+        let forest = document.getElementById("forest");
+        let rocks = document.getElementById("rocks");
+        let water = document.getElementById("water");
+        let header = document.querySelector(".nav");
+        let btn = document.querySelector(".btn");
+
+        window.addEventListener('scroll', () => {
+
+            let value = window.scrollY;
+            text.style.top = 50 + value * -0.5 + "%";
+            bird1.style.top = value * -1.5 + "px";
+            bird1.style.left = value * 2 + "px";
+            bird2.style.top = value * -1.5 + "px";
+            bird2.style.left = value * -2 + "px";
+            forest.style.top = value * 0.25 + "px";
+            rocks.style.top = value * -0.12 + "px";
+            header.style.top = value * 0.5 + "px";
+            btn.style.marginTop = value * 1.5 + "px";
+
+        })
+
+
+
+    </script>
+</body>
+
+</html>

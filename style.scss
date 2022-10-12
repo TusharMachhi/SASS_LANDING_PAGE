@@ -1,0 +1,105 @@
+@import 'variables';
+@import 'topheaders';
+@import 'about';
+@import 'services';
+@import 'port';
+@import 'team';
+@import 'contact';
+@import 'footer';
+
+
+@font-face {
+  font-family: myfont;
+  src: url('adani-regular.ttf');
+}
+
+* {
+    // font-family: 'Poppins', sans-serif;
+    font-family: myfont;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+  }
+
+  
+.cont{
+  width: 100%;
+}
+  
+
+
+
+
+    
+  .hom{
+
+   
+
+       
+        
+       
+
+      width: 100%;
+      height:  100vh;
+      background: url("img/hero-bg\ -\ Copy.jpg");
+      object-fit: cover;
+      background-attachment: fixed;
+      position: relative;
+     
+      background-size: cover;
+        z-index: 2222;
+      
+
+      .content{
+          .ss{
+              color:$mailcolor;
+              font-weight: bold;
+             
+          }
+        
+       
+          .qot{
+              font-weight: bold;
+              font-size: map-get($fonts,"big");
+              @include media(phone){
+                font-size: map-get($fonts, "medium" );
+              }
+          }
+          .qot1{
+
+            font-size: map-get($fonts, "medium" );
+            @include media(phone){
+              font-size: 16px;
+              text-align: center;
+            }
+
+          }
+         
+         
+          line-height: 60px;
+          color: white;
+          @include myflex(center);
+          flex-direction: column;
+          width: 100%;
+          height: 100%;
+          background:rgba(0,0,0,0.5);
+         
+          
+
+          .btn{
+              
+
+            @include btn(25px,180px,45px,white,$mailcolor);
+            border: 1px solid black;
+            font-size:20px;
+            margin-top: 15px;
+             
+          }
+      }
+     
+     
+  }
+  

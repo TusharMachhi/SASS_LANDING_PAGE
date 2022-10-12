@@ -1,0 +1,139 @@
+.top-bar {
+    .concontainer {
+        @include myflex(space-between);
+        background: #191919;
+        font-size: 15px;
+        height: 40px;
+        padding: 0;
+        color: rgba(255, 255, 255, 0.6);
+
+        @include media(phone) {
+            display: none;
+        }
+    }
+
+    span {
+        padding: 0px 10px;
+        .fa-envelope-open {
+            color: $mailcolor;
+        }
+        .fa-phone-alt {
+            color: $mailcolor;
+        }
+    }
+}
+
+.header {
+    transition: all 0.3s ease-in-out;
+    .logo {
+        @include media(phone) {
+            font-size: 20px;
+        }
+    }
+
+    .hamb {
+        @include media(tab-port) {
+            display: block;
+        }
+
+        display: none;
+
+        .fa-bars {
+            font-size: 25px;
+            @include media(tab-port) {
+                z-index: 3333;
+            }
+            @include media(phone) {
+                font-size: 20px;
+            }
+        }
+    }
+    width: 100%;
+    z-index: 3333;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(48, 46, 46);
+    z-index: 7777;
+
+    @include myflex(space-between);
+
+    color: white;
+    padding: 10px;
+
+    .myul {
+        @include media(tab-port) {
+            display: none;
+        }
+        &.ulact {
+            @include media(tab-port) {
+                @include myflex(center);
+                flex-direction: column;
+                position: fixed;
+                transition: all 0.3s ease-in-out;
+                height: 100vh;
+                background: rgb(37, 36, 36);
+                width: 100%;
+                height: 100vh;
+                top: 50px;
+                left: 0;
+                right: 0;
+
+                li {
+                    margin: 10px;
+                }
+                &.newact {
+                   display: none;
+                }
+            }
+            
+        }
+
+        @include myflex(center);
+
+        .active {
+            background: $mailcolor;
+            border-radius: 20px;
+        }
+
+        li {
+            margin: 0px 5px;
+            list-style: none;
+            padding: 3px 10px;
+
+            ul{
+                li{
+
+                    display: none;
+
+                    
+                }
+                
+
+                
+                   
+
+                    &:hover{
+                        display: block;
+    
+                    }
+                
+
+            }
+
+            
+
+            &:hover {
+                background: $mailcolor;
+                border-radius: 20px;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

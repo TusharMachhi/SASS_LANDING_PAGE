@@ -1,0 +1,47 @@
+.team{
+    text-align: center;
+   
+}
+.theader{
+    font-size: map-get($fonts, "big" );
+}
+.teamgrid{
+   width: 80%;
+    margin: 50px auto;
+    @include grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap: 20px;
+@include media(phone){
+    grid-template-columns: repeat(1,1fr);
+
+}
+@include media(tab-port){
+    grid-template-columns: repeat(1,1fr);
+
+}
+
+.teamcards{
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    padding:30px;
+    img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+}
+.tnam{
+    font-size: map-get($fonts, "medium" );
+    padding:5px;
+}
+.post{
+    font-size: map-get($fonts, "small" );
+    padding-bottom: 10px;
+}
+.post1{
+    font-size: 15px;
+    color: rgb(138, 134, 134);
+}

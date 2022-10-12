@@ -1,0 +1,109 @@
+.potfolio{
+    width: 100%;
+    height: 130vh;
+    @include media(phone){
+        height: 250vh;
+    }
+    @include media(tab-port){
+        height: 350vh;
+    }
+}
+
+.portheader{
+    text-align: center;
+    padding:20px;
+
+    
+
+    .porthe{
+        font-size: map-get($fonts, "big" );
+        padding:20px;
+    }
+}
+.portmenu{
+    ul{
+    @include myflex(center);
+    .active{
+        color: $mailcolor;
+    }
+    li{
+        &:hover{
+            color: $mailcolor;
+        }
+       
+        padding:20px;
+        list-style: none;
+    }
+
+
+    }
+}
+.portcard{
+    @include grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    grid-gap: 35px;
+    margin: 40px auto;
+    @include media(tab-port)
+    {
+        grid-template-columns: 2fr;
+    }
+
+    @include media(phone)
+    {
+        grid-template-columns: 1fr;
+    }
+    .mypcards{
+
+        &:hover .crdinf{
+            opacity: 1;
+            bottom: 20px;
+
+        }
+        position: relative;
+        box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+        width: 100%;
+        height: 400px;
+        img{
+            object-fit:cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.crdinf{
+    opacity: 0;
+    padding:10px;
+   bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    transition: all ease-in-out 0.3s;
+    background: rgba(255, 255, 255, 0.9);
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    @include myflex(space-between)
+}
+.mydiv{
+    i{
+        padding-left: 10px;
+    }
+}
+.portcard{
+    
+        left: 0;
+        right: 0;
+        margin: 0px auto;
+        position: absolute;
+         background-color: white;
+        
+
+    
+}
+.ab2,.ab3,.ab4{
+    display: none;
+}
+.all{
+    color: $mailcolor;
+}
